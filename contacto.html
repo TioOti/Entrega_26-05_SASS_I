@@ -8,19 +8,19 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="scss/estilos.css">
 	<meta name="description" content="Somos un estudio artístico, donde ponemos tus ideas, en la piel o lo pintamos en tu pared, donde mas te guste !">
-	<title>Cota - Estudio</title>
+	<title>Cota - Estudio | Contacto</title>
 </head>
 <body>
 	
 <!--========================= HEADER =========================-->
-<div id="header" class="sticky-top">		
+<div id="header" class="sticky-top">		 
 	<nav class="navbar justify-content-center navbar-expand-lg navbar-light container-fluid">
 	  <div class="container-fluid flex-fill d-flex">
 		<a title="Cota-Estudio" class="navbar-brand flex-s-fill flex-md-fill  flex-xl-fill" href="#">
 			<img src="img/cota-tittle.png">
 		</a>		    
-		<button class="navbar-toggler flex-xl-fill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
+		<button class=" navbar-toggler flex-xl-fill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span><i class="bi bi-list"></i></span>
 		</button>
 		<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 		  <ul class="navbar-nav fs-5">
@@ -28,7 +28,7 @@
 			  <a class="nav-link" aria-current="page" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link active" href="contacto.html">Contacto</a>
+			  <a class="nav-link nav_active" href="contacto.html">Contacto</a>
 			</li>
 			   <li class="nav-item">
 			  <a class="nav-link" href="staff.html">Staff</a>
@@ -37,7 +37,7 @@
 			  <a class="nav-link" href="galeria.html">Galeria</a>
 			</li>
 			   <li class="nav-item">
-			  <a class="nav-link" href="merchandising.html">Merchandising</a>
+			  <a class="nav-link" href="merchandising.html">Tienda</a>
 			</li>	
 		  </ul>
 		</div>
@@ -51,25 +51,38 @@
 		<div id="formulario_" class="row">	
 			<div class="col-sm-12">
 				<article class="row col-sm-12 text-light">
-					<h1 class="text-center fs-6 mb-4 col-12"> COTA ESTUDIO - MONTE CRISTO</h1>
-					<div class="col-xl-4">
-						<h3 class="my-5 text-center">INFORMACIÓN</h3>
-							<ul>
-								<li>Dirección: Colón 226</li>
-								<li>WhatsApp: 3518138812</li>
-								<li>Teléfono: 3518138812</li>
-								<li>Horarios: Lunes a Sábados de 10:00 a 20:00 hs</li>
-							</ul>
-
+					<h1 class="titulo-pagina2">Contacto</h1>
+					<div class="col-xl-5 mb-3">
+						<h3 class="text-center fs-4">TE ESPERAMOS EN :</h3>
+						<ul>								
+							<li>
+								<i class="bi bi-geo-alt-fill"></i>
+								<span>Dirección:</span> Colón 226 - Monte Cristo, Córdoba
+							</li>
+							<li>
+								<i class="bi bi-whatsapp"></i>
+								<span>WhatsApp:<a href="https://api.whatsapp.com/send?phone=543518138812&text=Hola! Me gustaria agendar un turno!"
+								title="Sacá tu turno" target="new_blank"> 3518138812</a></span>
+							</li>
+							
+							<li>
+								<i class="bi bi-telephone-fill"></i>
+								<span>Teléfono:<a href="tel:3518138812"> 3518138812</a></span>
+							</li> 
+							<li>
+								<i class="bi bi-clock-fill"></i>
+								<span>Horarios:</span> Lunes a Sábados de 15:00 a 20:00 hs
+							</li> 
+						</ul>
 					</div>
-					<div class="my-5 col-sm-12 col-xl-8">				
-						<h3 class="mb-3 fs-5">Podes encontrarnos en:</h3>
+					<div class="pre-maps col-sm-12 col-xl-7">		
+						<h3 class="mb-3 fs-4">Ubicación de nuestro estudio</h3>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.4488360954856!2d-63.94680788430591!3d-31.346591300017145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432eaba4ef94e1b%3A0x11fe91eb2cfe9bbf!2sCristobal%20Col%C3%B3n%20226%2C%20X5125%20Monte%20Cristo%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1653781903616!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</article>
 				<form class="row col-sm-12 ">
 					<div class="fs-3 mt-3">
-						<h2 class="text-white">Comunicate con nosotros: </h2>
+						<h2 class="text-white">Llená este formulario y nos pondremos en contacto a la brevedad : </h2>
 					</div>
 					<div class="form-floating mb-3">						
 						<input type="text" class="form-control" id="nombre" placeholder="Nombre">
@@ -80,7 +93,7 @@
 						<label for="correo">Correo Electrónico</label>
 					</div>
 					<div class="form-floating mb-3">
-						<input type="tel" class="form-control" id="telefono" placeholder="Numero de telefono">
+						<input type="tel" class="form-control" id="telefono" placeholder="Número de teléfono">
 						<label for="telefono">Numero de Telefono</label>
 					</div>
 					<div class="mb-3">
@@ -92,9 +105,11 @@
 						  </select>
 					</div>				
 				</form>
-				<div class="col-sm-12 text-center">
-					<button type="submit" class="btn btn-primary">Enviar</button>
-					<a href="https://api.whatsapp.com/send?phone=543518138812&text=Hola ! Me gustaria agendar un turno" class="btn btn-success" role="button">WhatsApp</a>
+					<div class="col-sm-12 text-center">
+					<button type="button" class="btn btn-secondary me-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Esta opción estará habilitada mas adelante. ">
+						Enviar
+					</button>						
+					<a href="https://api.whatsapp.com/send?phone=543518138812&text=Hola, mi nombre es _____, les hablaba por _____" title="Sacá tu turno" target="new_blank" class="btn btn-success" role="button">WhatsApp</a>
 				</div>
 			</div>	
 		</div>
@@ -102,9 +117,14 @@
 	<div class="containter-fluid text-center pb-2 my-3 fs-2">
 		<span>TE ESPERAMOS !</span>
 	</div>
+<!--========================= BTN FLOAT =========================-->
 	<div class="btn-wsp">
 		<a href="https://api.whatsapp.com/send?phone=543518138812&text=Hola! Me gustaria agendar un turno!" title="Sacá tu turno" target="new_blank">
 			<img src="img/whatsapp.png" alt="whatsapp"></a>
+	</div>
+	<div class="btn-up">
+		<a href="#" title="Ir Arriba">
+		<i class="bi bi-arrow-up-circle-fill"></i>			
 	</div>
 
 </section>
@@ -115,12 +135,16 @@
 		<a href="https://api.whatsapp.com/send?phone=543518138812&text=Hola! Me gustaria agendar un turno!"	title="Comunicate con nosotros via whatsapp" target="new_blank"><i class="bi bi-whatsapp"></i></a>
 		<a href="https://www.instagram.com/cota.art35" target="_blank" title="Segui nuestras historias y sorteos!"><i class="bi bi-instagram"></i></a>
 		<a href="https://www.facebook.com/CotaArt35-103750124939834" title="Acercate a ver nuestras publicaciones de facebook" target="new_blank"><i class="bi bi-facebook"></i></a>
-		<a href="#"><i class="bi bi-youtube"></i></a>
 		<p class="fs-6 px-3 pt-3 text-white"> Cota Estudio &copy; 2022 - TioOti - Todos los derechos reservados </p>
 	</div>
 </div>
-
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+	<script>
+			var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		return new bootstrap.Popover(popoverTriggerEl)
+		})
+	</script>
 </body>
 </html> 

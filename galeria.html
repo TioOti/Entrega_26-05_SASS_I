@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="scss/estilos.css">
 	<meta name="description" content="Somos un estudio artístico, donde ponemos tus ideas, en la piel o lo pintamos en tu pared, donde mas te guste ! Vení a conocernos ..">
-	<title>Cota - Estudio</title>
+	<title>Cota - Estudio | Galeria</title>
 </head>
 <body>
 	
@@ -19,8 +19,8 @@
 		<a title="Cota-Estudio" class="navbar-brand flex-s-fill flex-md-fill  flex-xl-fill" href="#">
 			<img src="img/cota-tittle.png">
 		</a>		    
-		<button class="navbar-toggler flex-xl-fill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
+		<button class=" navbar-toggler flex-xl-fill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span><i class="bi bi-list"></i></span>
 		</button>
 		<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 		  <ul class="navbar-nav fs-5">
@@ -34,10 +34,10 @@
 			  <a class="nav-link" href="staff.html">Staff</a>
 			</li>
 			   <li class="nav-item">
-			  <a class="nav-link active" href="galeria.html">Galeria</a>
+			  <a class="nav-link nav_active" href="galeria.html">Galeria</a>
 			</li>
 			   <li class="nav-item">
-			  <a class="nav-link" href="merchandising.html">Merchandising</a>
+			  <a class="nav-link" href="merchandising.html">Tienda</a>
 			</li>	
 		  </ul>
 		</div>
@@ -46,99 +46,296 @@
 </div>
 <!--========================= GALERIA DE IMAGENES =========================-->
 <section id="galeria" class="min-vh-100">
+	<h1 class="titulo-pagina3">GALERIA</h1>
 	<div class="container-xl">
 		<div class="titulo_gallery1"> TIO HACHE</div>
 		<div class="gallery1 row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-		<div class="col">
-			<img src="img/img_corregidas_900x600/th1.jpg" class="gallery-item" alt="gallery">
+				<div class="col">
+					<img src="img/img_corregidas_900x600/th1.jpg" class="gallery-item" alt="gallery" data-bs-toggle="modal" data-bs-target="#th1">	
+				</div>	
+				<div class="modal fade" id="th1">	
+					<div class="modal-dialog modal-dialog-centered">	
+						<div class="modal-content">	
+							<img src="img/th1.jpg" class="gallery-item" alt="gallery">	
+						</div>	
+					</div>	
+				</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/th_main.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#th2">
+			</div>
+			<div class="modal fade" id="th2">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/th_main.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/th3.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#th3">
+			</div>
+			<div class="modal fade" id="th3">
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/th4.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/th4.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#th4">
+			</div>
+			<div class="modal fade" id="th4">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/th5.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/todos2.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#th5">
+			</div>
+			<div class="modal fade" id="th5">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/todos2.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/th6.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#th6">
+			</div>
+			<div class="modal fade" id="th6">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/th6.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>		 
 		</div>
-		<div class="col">
-			<img src="img/img_corregidas_900x600/th_main.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-			<img src="img/img_corregidas_900x600/th3.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-			<img src="img/img_corregidas_900x600/th4.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-			<img src="img/img_corregidas_900x600/todos2.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-			<img src="img/img_corregidas_900x600/th6.jpg" class="gallery-item" alt="gallery">
-		</div>
-		</div>
+
 		<div class="titulo_gallery2"> CHANCHA</div>
 		<div class="gallery row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-		<div class="col">
-		<img src="img/img_corregidas_900x600/chch1.jpg" class="gallery-item" alt="gallery">
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/chch1.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#ch1">
+			</div>
+			<div class="modal fade" id="ch1">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chch1.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+			
+			<div class="col">
+				<img src="img/img_corregidas_900x600/chancha_main.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#ch2">
+			</div>
+			<div class="modal fade" id="ch2">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/ch_main.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+			
+			<div class="col">
+				<img src="img/img_corregidas_900x600/chch3.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#ch3">
+			</div>
+			<div class="modal fade" id="ch3">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chch3.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+			
+			<div class="col">
+				<img src="img/img_corregidas_900x600/chch4.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#ch4">
+			</div>
+			<div class="modal fade" id="ch4">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chch4.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+			
+			<div class="col">
+				<img src="img/img_corregidas_900x600/todos3.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#ch5">
+			</div>
+			<div class="modal fade" id="ch5">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/todos3.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/chch6.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#ch6">
+			</div>
+			<div class="modal fade" id="ch6">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chch6.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
 		</div>
-		<div class="col">
-		<img src="img/img_corregidas_900x600/chancha_main.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-		<img src="img/img_corregidas_900x600/chch3.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-		<img src="img/img_corregidas_900x600/chch4.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-		<img src="img/img_corregidas_900x600/todos3.jpg" class="gallery-item" alt="gallery">
-		</div>
-		<div class="col">
-		<img src="img/img_corregidas_900x600/chch6.jpg" class="gallery-item" alt="gallery">
-		</div>
-		</div>
+		
 		<div class="titulo_gallery3"> CHIRY</div>
 		<div class="gallery3 row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+
 			<div class="col">
-			<img src="img/img_corregidas_900x600/chiry1.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/chiry1.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#chy1">
 			</div>
+			<div class="modal fade" id="chy1">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chiry1.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+		
 			<div class="col">
-			<img src="img/img_corregidas_900x600/chiry2.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/chiry2.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#chy2">
 			</div>
+			<div class="modal fade" id="chy2">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chiry_2.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+			
 			<div class="col">
-			<img src="img/img_corregidas_900x600/chiry3.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/chiry3.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#chy3">
 			</div>
+			<div class="modal fade" id="chy3">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chiry3.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
 			<div class="col">
-			<img src="img/img_corregidas_900x600/chiry4.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/chiry4.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#chy4">
 			</div>
+			<div class="modal fade" id="chy4">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chiry4.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+			
 			<div class="col">
-			<img src="img/img_corregidas_900x600/todos1.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/todos1.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#chy5">
 			</div>
+			<div class="modal fade" id="chy5">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/todos1.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
 			<div class="col">
-			<img src="img/img_corregidas_900x600/chiry6.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/chiry6.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#chy6">
 			</div>
+			<div class="modal fade" id="chy6">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/chiry6.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>			
 		</div>
+
 		<div class="titulo_gallery4"> LUCHO</div>
 		<div class="gallery4 row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
 			<div class="col">
-			<img src="img/img_corregidas_900x600/lucho5.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/lucho5.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#lch1">
 			</div>
-			<div class="col">
-			<img src="img/img_corregidas_900x600/lucho_main.jpg" class="gallery-item" alt="gallery">
+			<div class="modal fade" id="lch1">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/lucho5.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
 			</div>
+
 			<div class="col">
-			<img src="img/img_corregidas_900x600/lucho3.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/lucho_main.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#lch2">
 			</div>
-			<div class="col">
-			<img src="img/img_corregidas_900x600/lucho4.jpg" class="gallery-item" alt="gallery">
+			<div class="modal fade" id="lch2">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/lucho_main.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
 			</div>
+
 			<div class="col">
-			<img src="img/img_corregidas_900x600/todos4.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/lucho3.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#lch3">
 			</div>
+			<div class="modal fade" id="lch3">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/lucho3.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
 			<div class="col">
-			<img src="img/img_corregidas_900x600/lucho6.jpg" class="gallery-item" alt="gallery">
+				<img src="img/img_corregidas_900x600/lucho4.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#lch4">
+			</div>
+			<div class="modal fade" id="lch4">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/lucho4.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/todos4.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#lch5">
+			</div>
+			<div class="modal fade" id="lch5">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/todos4.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
+			</div>
+
+			<div class="col">
+				<img src="img/img_corregidas_900x600/lucho6.jpg" class="gallery-item" alt="gallery"  data-bs-toggle="modal" data-bs-target="#lch6">
+			</div>
+			<div class="modal fade" id="lch6">	
+				<div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">	
+						<img src="img/lucho6.jpg" class="gallery-item" alt="gallery">	
+					</div>	
+				</div>	
 			</div>
 		</div>
 	</div>
  </section>
 
-<!--========================= FLOAT WSP BUTTON =========================-->
-
+<!--========================= BTN FLOAT =========================-->
 <div class="btn-wsp">
 	<a href="https://api.whatsapp.com/send?phone=543518138812&text=Hola! Me gustaria agendar un turno!" title="Sacá tu turno" target="new_blank">
 		<img src="img/whatsapp.png" alt="whatsapp"></a>
+</div>
+<div class="btn-up">
+	<a href="#" title="Ir Arriba">
+	<i class="bi bi-arrow-up-circle-fill"></i>			
 </div>
 
 <!--========================= FOOTER =========================-->
@@ -146,9 +343,7 @@
 	<div id="iconos" class="px-1 py-2">
 		<a href="https://api.whatsapp.com/send?phone=543518138812&text=Hola! Me gustaria agendar un turno!"	title="Comunicate con nosotros via Whatsapp" target="new_blank"><i class="bi bi-whatsapp"></i></a>
 		<a href="https://www.instagram.com/cota.art35" target="_blank" title="Segui nuestras historias y sorteos!"><i class="bi bi-instagram"></i></a>
-		<a href="https://www.facebook.com/CotaArt35-103750124939834" title="Acercate a ver nuestras publicaciones de facebook" target="new_blank"><i class="bi bi-facebook"></i></a>
-		<a href="#"><i class="bi bi-youtube"></i></a>
-		<p class="fs-6 px-3 pt-3 text-white"> Cota Estudio &copy; 2022 - TioOti - Todos los derechos reservados </p>
+		<a href="https://www.facebook.com/CotaArt35-103750124939834" title="Acercate a ver nuestras publicaciones de facebook" target="new_blank"><i class="bi bi-facebook"></i></a>		<p class="fs-6 px-3 pt-3 text-white"> Cota Estudio &copy; 2022 - TioOti - Todos los derechos reservados </p>
 	</div>
 </div>
 

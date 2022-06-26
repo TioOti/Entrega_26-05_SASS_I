@@ -12,7 +12,8 @@
   color: #0d6efd;
 }
 
-.separador, #cards_integrantes h2, #novedades h3, #horarios h5, .titulo_gallery1, .titulo_gallery2, .titulo_gallery3, .titulo_gallery4, section h1, #productos h2 {
+.separador, #novedades h3, .titulo-pagina3, #cards_separador h2, #banner h3, #horarios h5, .titulo_gallery1, .titulo_gallery2, .titulo_gallery3, .titulo_gallery4, section h1, section h3, section .pre-maps h3, section #formulario_ .titulo-pagina2, #productos h2 {
+  font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif;
   background-color: black;
   text-align: center;
@@ -22,16 +23,18 @@
   padding: 1rem;
   margin-top: 0;
   margin-bottom: 0;
+  color: #d9d9d9;
+  text-shadow: -1px -1px 1px rgba(255, 72, 0, 0.116), 1px 2px 1px #058fc5;
 }
 
 @media all and (max-width: 576px) {
-  .separador, #cards_integrantes h2, #novedades h3, #horarios h5, .titulo_gallery1, .titulo_gallery2, .titulo_gallery3, .titulo_gallery4, section h1, #productos h2 {
+  .separador, #novedades h3, .titulo-pagina3, #cards_separador h2, #banner h3, #horarios h5, .titulo_gallery1, .titulo_gallery2, .titulo_gallery3, .titulo_gallery4, section h1, section h3, section .pre-maps h3, section #formulario_ .titulo-pagina2, #productos h2 {
     font-size: 1rem;
     font-weight: 700;
   }
 }
 
-.montserrat, #productos h2 {
+.montserrat, #novedades h3, .titulo-pagina3, #productos h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -73,6 +76,17 @@
   background-color: rgba(63, 201, 164, 0.514);
 }
 
+.subtitulo_3d {
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #35bf98, -2px 2px 0 #ea4e5e, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  font-size: 1.3rem;
+}
+
+.subtitulo_comun, #novedades h4 {
+  text-shadow: #474747 4px 3px 5px;
+}
+
 body {
   font-weight: 400;
   font-family: 'Raleway', sans-serif;
@@ -86,17 +100,18 @@ header {
   text-align: center;
 }
 
-header h2 {
+header h3 {
+  text-shadow: #0d6efd 1.2px 1px 0;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fafafa;
+  color: #ffffff;
   padding: 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 @media all and (max-width: 576px) {
-  header h2 {
+  header h3 {
     font-size: 1rem;
     font-weight: 700;
   }
@@ -106,10 +121,14 @@ header h2 {
   background-color: rgba(33, 37, 41, 0.85);
 }
 
-@media all and (max-width: 990px) {
-  #header .navbar {
-    background-color: #212529;
-  }
+#header i {
+  color: #fafafa;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+#header i:hover {
+  color: #0d6efd;
 }
 
 #header img {
@@ -122,7 +141,7 @@ header h2 {
   }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 461px) {
   #header img {
     width: 285px;
   }
@@ -130,7 +149,7 @@ header h2 {
 
 @media all and (max-width: 375px) {
   #header img {
-    width: 255px;
+    width: 225px;
   }
 }
 
@@ -143,10 +162,6 @@ header h2 {
   color: #ffffff;
 }
 
-#header li a .active {
-  font-weight: 700;
-}
-
 #header li:hover {
   font-weight: 700;
   border: 1px black solid;
@@ -154,10 +169,16 @@ header h2 {
 }
 
 #header li:hover a {
-  color: #11a2db;
+  color: #0d6efd;
 }
 
-/*================ CAROUSEL =========================*/
+#header .nav_active {
+  font-weight: 600;
+  color: #0d6efd;
+  text-shadow: -1px 1px 1.1px #1359c4a4;
+}
+
+/*================ CAROUSEL PRESENTACION =========================*/
 #myCarousel a {
   margin-top: 1rem;
 }
@@ -166,12 +187,37 @@ header h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 4rem;
+  color: #0cacdd;
+  text-shadow: 3px 5px 2px #000000;
 }
 
 @media all and (max-width: 576px) {
   #myCarousel h1 {
     font-size: 2rem;
   }
+}
+
+#myCarousel h2 {
+  color: #0cacdd;
+  text-shadow: #e0e0e0 1px 1px 0;
+}
+
+@media all and (max-width: 576px) {
+  #myCarousel h2 {
+    text-shadow: 3px 2px 2px #000000;
+  }
+}
+
+#myCarousel a {
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#myCarousel a:hover {
+  border: #ffffff 3px solid;
+  opacity: .7;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 #myCarousel .carousel-item {
@@ -202,21 +248,73 @@ header h2 {
   padding-bottom: 3rem;
 }
 
+/*================ CARDS NOVEDADES =========================*/
+#novedades img {
+  width: 430px;
+  height: 250px;
+  margin: auto;
+}
+
+#novedades h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+#novedades h4 {
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  text-transform: capitalize;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+#novedades .card {
+  max-width: 450px;
+  min-height: 450px;
+  max-height: 450px;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+#novedades .card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: #000000 1px 1px 1px;
+          box-shadow: #000000 1px 1px 1px;
+}
+
+#novedades .card-body {
+  margin-top: 1px;
+}
+
 /*================STAFF CARDS=========================*/
-#cards_integrantes h2 {
+.titulo-pagina3 {
+  font-size: 1.3rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+#cards_separador h2 {
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 #banner h3 {
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
   font-size: 2.2rem;
+  background-color: #212529;
 }
 
 #banner p {
   font-size: 1.3rem;
+  text-align: justify;
 }
 
 #banner p strong {
-  font-size: 1.4rem;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
 }
 
 @media all and (max-width: 576px) {
@@ -243,6 +341,12 @@ header h2 {
   transition: .2s;
 }
 
+@media all and (max-width: 576px) {
+  .socials_staff1 #iconos i {
+    padding: 0 .3rem;
+  }
+}
+
 .socials_staff1 #iconos i:hover {
   -webkit-transform: perspective();
           transform: perspective();
@@ -253,6 +357,12 @@ header h2 {
   color: #ea4e5e;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+@media all and (max-width: 576px) {
+  .socials_staff2 #iconos i {
+    padding: 0 .3rem;
+  }
 }
 
 .socials_staff2 #iconos i:hover {
@@ -267,6 +377,12 @@ header h2 {
   transition: .2s;
 }
 
+@media all and (max-width: 576px) {
+  .socials_staff3 #iconos i {
+    padding: 0 .3rem;
+  }
+}
+
 .socials_staff3 #iconos i:hover {
   -webkit-transform: perspective();
           transform: perspective();
@@ -279,6 +395,12 @@ header h2 {
   transition: .2s;
 }
 
+@media all and (max-width: 576px) {
+  .socials_staff4 #iconos i {
+    padding: 0 .3rem;
+  }
+}
+
 .socials_staff4 #iconos i:hover {
   -webkit-transform: perspective();
           transform: perspective();
@@ -286,52 +408,69 @@ header h2 {
 }
 
 #staff_cards .row {
-  margin: 1rem;
+  margin: auto;
+}
+
+@media all and (max-width: 576px) {
+  #staff_cards .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 #staff_cards .row img {
   border-radius: 10px;
 }
 
+@media all and (max-width: 576px) {
+  #staff_cards .row img {
+    margin: 1rem auto 1rem;
+  }
+}
+
 #staff_cards h3 {
-  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #35bf98, -2px 2px 0 #ea4e5e, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  font-size: 3.5rem;
 }
 
 @media all and (max-width: 500px) {
   #staff_cards h3 {
     font-size: 2rem;
+    letter-spacing: 4px;
   }
 }
 
 @media all and (max-width: 375px) {
   #staff_cards h3 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
   }
 }
 
-/*================ CARDS NOVEDADES =========================*/
-#novedades img {
-  width: 430px;
-  height: 250px;
+#staff_cards p {
+  font-size: 1.3rem;
 }
 
-#novedades h3 {
-  margin-bottom: 1rem;
+@media all and (max-width: 375px) {
+  #staff_cards p {
+    font-size: 1rem;
+  }
 }
 
-#novedades .card {
-  max-width: 400px;
-  max-height: 450px;
-}
-
-/*===========================================================================-->
-<!--========== HORARIOS ====================================*/
+/*=============== HORARIOS ================================*/
 #horarios {
   padding: 0;
+  margin-bottom: 3rem;
 }
 
 #horarios .contenedor_horarios {
   margin-top: 2rem;
+}
+
+#horarios h5 {
+  font-size: 1.6rem;
 }
 
 #horarios span {
@@ -342,14 +481,23 @@ header h2 {
   max-height: 600px;
 }
 
+#horarios ul ol {
+  text-align: left;
+  margin: auto;
+}
+
+#horarios p {
+  text-decoration: underline;
+}
+
 #horarios a {
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
 #horarios a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 0.5;
 }
 
@@ -399,51 +547,92 @@ header h2 {
 }
 
 .titulo_gallery1 {
-  font-size: 2rem;
+  text-shadow: 2px 2px 0 #9e3232, 3px 3px 0 #c5300bd0;
+  font-size: 3rem;
 }
 
 @media all and (max-width: 576px) {
   .titulo_gallery1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 .titulo_gallery2 {
-  font-size: 2rem;
+  text-shadow: 2px 2px 0 #9e3232, 3px 3px 0 #c5300bd0;
+  font-size: 3rem;
 }
 
 @media all and (max-width: 576px) {
   .titulo_gallery2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 .titulo_gallery3 {
-  font-size: 2rem;
+  text-shadow: 2px 2px 0 #9e3232, 3px 3px 0 #c5300bd0;
+  font-size: 3rem;
 }
 
 @media all and (max-width: 576px) {
   .titulo_gallery3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 .titulo_gallery4 {
-  font-size: 2rem;
+  text-shadow: 2px 2px 0 #9e3232, 3px 3px 0 #c5300bd0;
+  font-size: 3rem;
 }
 
 @media all and (max-width: 576px) {
   .titulo_gallery4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 /*============== FORMULARIO ===============================================*/
+section article ul li i {
+  font-size: 1.5rem;
+  margin: 0 .5rem 0 auto;
+}
+
+section article ul li i:hover {
+  color: #0d6efd;
+}
+
+section article ul li span {
+  font-size: 1.2rem;
+}
+
+section article ul li span a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fafafa;
+}
+
 section form {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 9px;
   margin-bottom: 1.6rem;
-  border: 1px solid #fafafa;
+}
+
+section h1 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 1px #797979;
+}
+
+section h3 {
+  margin: 0 0 1rem;
+}
+
+section .pre-maps h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 section span {
@@ -456,6 +645,14 @@ section #formulario_ {
 
 section #formulario_ iframe {
   width: 100%;
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+}
+
+section #formulario_ .titulo-pagina2 {
+  padding: .5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 section ul {
@@ -480,21 +677,38 @@ section ul li {
   }
 }
 
-/*========== PRODUCTOS ====================================*/
+.btn-up i {
+  color: #000000;
+  font-size: 3.25rem;
+  z-index: 100;
+  position: fixed;
+  right: 1.3rem;
+  bottom: .4rem;
+}
+
+.btn-up i:hover {
+  color: #0d6efd;
+}
+
+/*========== TIENDA ====================================*/
 #productos {
-  -webkit-transition: 200ms;
-  transition: 200ms;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 #productos img {
+  padding-top: 1rem;
   width: 300px;
   height: 300px;
+  border-radius: 10%;
   margin: auto;
 }
 
 #productos h2 {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
+  padding: .5rem;
 }
 
 #productos h5 {
@@ -505,17 +719,47 @@ section ul li {
   border-bottom: #212529 solid 1px;
 }
 
+#productos h6 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #000000;
+}
+
+#productos p {
+  margin: 0 3rem;
+}
+
+#productos .card {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#productos .card:hover {
+  border: #0d6efd 2px ridge;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#productos .card:hover h6 {
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 2.3rem;
+  color: #0d6efd;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
 #productos .card-footer {
   text-align: center;
 }
 
 #productos button {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #productos button:hover {
-  border: #0d6efd 4px solid;
+  border: #0d6efd 3px solid;
   opacity: .7;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);

@@ -4,7 +4,8 @@
 		}
 }
 .separador{
-	font-family: 'Montserrat', sans-serif;	
+	font-size: 1.6rem;
+	font-family: 'Montserrat', sans-serif;
 	background-color: black;
 	text-align: center;
 	font-size: 1.7rem;
@@ -13,6 +14,8 @@
 	padding: 1rem;
 	margin-top: 0;
 	margin-bottom: 0;
+	color: #d9d9d9;
+	text-shadow: -1px -1px 1px rgba(255, 72, 0, 0.116), 1px 2px 1px rgb(5, 143, 197);
 	@media all and (max-width: 576px){
 		font-size: 1rem;
 		font-weight: 700;
@@ -52,4 +55,13 @@
 			background-color: rgba(63, 201, 164, 0.514);
 		}
 	}
+}
+.subtitulo_3d{
+	font-weight: 400;
+	letter-spacing: 6px;
+	text-shadow: 2px 2px 0 #000000, 2px -2px 0 #35bf98, -2px 2px 0 #ea4e5e, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+	font-size: 1.3rem;
+}
+.subtitulo_comun{
+	text-shadow: #474747 4px 3px 5px;
 }
